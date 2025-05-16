@@ -1,0 +1,29 @@
+{
+  "name": "chrome_extension_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:popup": "rspack --mode=production --config config/rspack.config.popup.js",
+    "watch:popup": "rspack build --watch --mode=production --config config/rspack.config.popup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@rspack/cli": "^1.3.10",
+    "@rspack/core": "^1.3.10",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "css-loader": "^7.1.2",
+    "less": "^4.3.0",
+    "less-loader": "^12.3.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "antd": "^5.25.1",
+    "react": "^18.3.1",
+    "react-dom": "^18"
+  }
+}
