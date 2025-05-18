@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:popup": "rspack --mode=production --config config/rspack.config.popup.js",
-    "watch:popup": "rspack build --watch --mode=production --config config/rspack.config.popup.js"
+    "build": "rspack --mode=production --config config/rspack.config.js",
+    "dev:watch": "rspack build --watch --mode=production --config config/rspack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "@rspack/cli": "^1.3.10",
     "@rspack/core": "^1.3.10",
+    "@types/chrome": "^0.0.323",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "css-loader": "^7.1.2",
@@ -22,6 +23,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "ahooks": "^3.8.4",
     "antd": "^5.25.1",
     "react": "^18.3.1",
     "react-dom": "^18"

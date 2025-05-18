@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Demo",
+  "description": "A simple chrome extension demo.",
+  "version": "1.0",
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "permissions": [],
+  "action": {
+    "default_popup": "popup.html",
+    "default_width": 400,
+    "default_height": 600
+  },
+  "devtools_page": "devtools_portal.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": [
+        "content_scripts.js"
+      ]
+    }
+  ],
+  "background": "background.js"
+}
