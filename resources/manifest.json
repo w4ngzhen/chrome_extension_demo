@@ -23,5 +23,15 @@
       ]
     }
   ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "content_scripts_inject.js"
+      ],
+      "matches": [
+        "https://*/*"
+      ]
+    }
+  ],
   "background": "background.js"
 }
