@@ -1,0 +1,3 @@
+export const MSG_CENTER_TYPE = "__MSG_CENTER_TYPE__";
+
+export const PORT_FOR_MSG_CENTER_KEY = "__PORT_FOR_MSG_CENTER_KEY__";

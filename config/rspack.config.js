@@ -79,12 +79,12 @@ module.exports = defineConfig({
     }),
   ],
   resolve: {
-    extensions: [".tsx", ".jsx", ".ts", ".js", '.json"'],
+    extensions: [".tsx", ".jsx", ".ts", ".js", ".json"],
   },
   module: {
     rules: [
       {
-        test: /\.([jt])sx$/,
+        test: /\.[jt]sx?$/,
         loader: "builtin:swc-loader",
         exclude: [/[\\/]node_modules[\\/]/],
         options: {
@@ -98,7 +98,7 @@ module.exports = defineConfig({
                 runtime: "automatic",
               },
             },
-            externalHelpers: true,
+            externalHelpers: true, // <- 注意需要安装 @swc/helpers
           },
         },
       },
